@@ -13,6 +13,7 @@ Clone the project and run the make filter command in the project directory</h3>
 <li>blur</li>
 <li>mirrored</li>
 <li>edges</li>
+<li>sepia</li>
 
 <br />
 <br />
