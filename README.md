@@ -18,11 +18,19 @@ Clone the project and run the make filter command in the project directory</h3>
 <br />
 <h1>Use:</h1>
 
-```bash
-make filter
+<h2>give permission for the run.sh file with the command:</h2>
 
+ <br />
+
+```bash
+chmod +x run.sh
+```
+ <br />
+
+```bash
 ./filter -flag (b, e, g, r) ./images/select_image.bmp ./outputdir/outputname.bmp
 ```
+
 
 <br />
 <h1>Example:</h1>
