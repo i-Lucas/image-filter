@@ -1,21 +1,18 @@
-<h1>C-image-filter</h1>
+<h1>Simple Image-filter</h1>
 
 <br />
 <h2>How to run the project: </h2>
 
-<h3>You will need to have Clang installed
-Clone the project and run the make filter command in the project directory</h3>
+<h3>You will need to have Clang installed</h3>
+<h5>Clone the project and run the make filter command in the project directory or execute ./run.sh</h5>
 
-<br />
-<br />
 <h2>Currently the project has 4 filters:</h3>
-<li>grayscale</li>
-<li>blur</li>
-<li>mirrored</li>
-<li>edges</li>
-<li>sepia</li>
+<li>grayscale <strong>flag -g</strong></li>
+<li>blur <strong>flag -g</strong></li>
+<li>mirrored <strong>flag -r</strong></li>
+<li>edges <strong>flag -e</strong></li>
+<li>sepia <strong>flag -s</strong></li>
 
-<br />
 <br />
 <h1>Use:</h1>
 
@@ -29,11 +26,9 @@ chmod +x run.sh
  <br />
 
 ```bash
-./filter -flag (b, e, g, r) ./images/select_image.bmp ./outputdir/outputname.bmp
+./filter -flag ./images/select_image.bmp ./outputdir/outputname.bmp
 ```
 
-
-<br />
 <h1>Example:</h1>
 
 ```bash
