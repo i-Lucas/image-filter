@@ -32,5 +32,7 @@ make filter
 ```
 
 ```
-This project is part of my studies in C, don't mind if the code is dirty and heavily commented, I'm still new to this but I already love C
+This project is part of my studies in C, 
+don't mind if the code is dirty and heavily commented,
+I'm still new to this but I already love C
 ```
