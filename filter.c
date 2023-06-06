@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     // Define as opções de filtro permitidas
-    char *filterOptions = "begr";
+    char *filterOptions = "begrs";
 
     // getopt Obtém a opção de filtro selecionada a partir dos argumentos de linha de comando
     char selectedFilter = getopt(argc, argv, filterOptions);
@@ -157,6 +157,10 @@ int main(int argc, char *argv[])
 
     case 'r':
         reflect(imageHeight, imageWidth, image);
+        break;
+
+    case 's':
+        sepia(imageHeight, imageWidth, image);
         break;
     }
 

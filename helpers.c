@@ -156,3 +156,30 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 }
+
+// Aplica o efeito de envelhecimento da imagem
+void sepia(int height, int width, RGBTRIPLE image[height][width])
+{
+    // Percorrendo cada linha da imagem
+    for (int i = 0; i < height; i++)
+    {
+        // Percorrendo cada pixel da linha atual
+        for (int j = 0; j < width; j++)
+        {
+            // Obtendo os valores originais dos componentes RGB do pixel atual
+            unsigned char originalRed = image[i][j].rgbtRed;
+            unsigned char originalGreen = image[i][j].rgbtGreen;
+            unsigned char originalBlue = image[i][j].rgbtBlue;
+
+            // Calculando os valores sepia para cada componente RGB
+            unsigned char sepiaRed = (unsigned char)((0.393 * originalRed) + (0.769 * originalGreen) + (0.189 * originalBlue));
+            unsigned char sepiaGreen = (unsigned char)((0.349 * originalRed) + (0.686 * originalGreen) + (0.168 * originalBlue));
+            unsigned char sepiaBlue = (unsigned char)((0.272 * originalRed) + (0.534 * originalGreen) + (0.131 * originalBlue));
+
+            // Verificando se os valores sepia excedem 255 e ajustando, se necessário
+            image[i][j].rgbtRed = (sepiaRed > 255) ? 255 : sepiaRed;
+            image[i][j].rgbtGreen = (sepiaGreen > 255) ? 255 : sepiaGreen;
+            image[i][j].rgbtBlue = (sepiaBlue > 255) ? 255 : sepiaBlue;
+        }
+    }
+}

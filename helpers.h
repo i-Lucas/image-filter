@@ -11,3 +11,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width]);
 
 // Aplica o efeito de desfoque na imagem
 void blur(int height, int width, RGBTRIPLE image[height][width]);
+
+// Aplica o efeito de envelhecimento da imagem
+void sepia(int height, int width, RGBTRIPLE image[height][width]);
